@@ -116,8 +116,9 @@
 			postMessage: true,
 
 			// Dispatches all reveal.js events to the parent window through postMessage
-			postMessageEvents: false,
-
+			postMessageEvents: false, 
+                        
+                        
 			// Focuses body when page changes visiblity to ensure keyboard shortcuts work
 			focusBodyOnPageVisibilityChange: true,
 
@@ -1983,6 +1984,9 @@
 		if( typeof f !== 'undefined' ) {
 			navigateFragment( f );
 		}
+
+
+// marker achim ... hier sollte man wohl einlkinken können und den event auch an den innerframe geben können
 
 		// Dispatch an event if the slide changed
 		var slideChanged = ( indexh !== indexhBefore || indexv !== indexvBefore );
